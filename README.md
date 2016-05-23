@@ -1,5 +1,5 @@
 # Inspireme
-Inspireme APp
+Inspireme App
 
 This is an iOS App to get Inpiration quotes everyday. 
 
