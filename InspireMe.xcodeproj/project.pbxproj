@@ -14,6 +14,7 @@
 		2C33D3431C5835F3006D2928 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D3421C5835F3006D2928 /* QuoteViewController.swift */; };
 		2C33D3451C5839E8006D2928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C33D3471C5839E8006D2928 /* Main.storyboard */; };
 		2C33D3521C583AAE006D2928 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C33D3541C583AAE006D2928 /* Localizable.strings */; };
+		2C7A2EFB1C591B3D00689356 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A2EFD1C591B3D00689356 /* InfoPlist.strings */; };
 		C2686668C06781462540783A /* Pods_InspireMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C475AFB7426FA0B59D1D41D8 /* Pods_InspireMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		2C33D3491C5839EB006D2928 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		2C33D3531C583AAE006D2928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C33D3551C583AB0006D2928 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C7A2EFC1C591B3D00689356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C7A2EFE1C591B3E00689356 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C475AFB7426FA0B59D1D41D8 /* Pods_InspireMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InspireMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +87,7 @@
 				2C33D32F1C583239006D2928 /* LaunchScreen.storyboard */,
 				2C33D3321C583239006D2928 /* Info.plist */,
 				2C33D3541C583AAE006D2928 /* Localizable.strings */,
+				2C7A2EFD1C591B3D00689356 /* InfoPlist.strings */,
 			);
 			path = InspireMe;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 				2C33D3521C583AAE006D2928 /* Localizable.strings in Resources */,
 				2C33D32E1C583239006D2928 /* Assets.xcassets in Resources */,
 				2C33D3451C5839E8006D2928 /* Main.storyboard in Resources */,
+				2C7A2EFB1C591B3D00689356 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +275,15 @@
 				2C33D3551C583AB0006D2928 /* es */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2C7A2EFD1C591B3D00689356 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C7A2EFC1C591B3D00689356 /* Base */,
+				2C7A2EFE1C591B3E00689356 /* es */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -365,11 +379,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InspireMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zahuisoftware.InspireMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -380,11 +396,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InspireMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zahuisoftware.InspireMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

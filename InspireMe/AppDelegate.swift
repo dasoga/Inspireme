@@ -78,6 +78,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.saveInBackground()
     }
     
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        print("path \(url.path)")
+        if url.path == "/business"{
+            print("success \(url.query)")
+        }else{
+            print("failure \(url.query)")
+        }
+        return true
+    }
 
 
 }

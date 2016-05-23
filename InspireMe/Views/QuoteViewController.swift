@@ -40,20 +40,22 @@ class QuoteViewController: UIViewController, ADBannerViewDelegate{
     
     @IBAction func nextQuote(sender:AnyObject){
         activityIndicatorView.startAnimating()
-        getRandomQuote()
+        //getRandomQuote()
     }
     
     
     // MARK: General Functions
-    
+    /*
     func getRandomQuote(){
         let language = getCurrentLanguage()
         PFCloud.callFunctionInBackground("getRandomQuote", withParameters: ["lang":language]) {
             (response: AnyObject?, error: NSError?) -> Void in
             
             if (error == nil){
-                let quote = response!["quote"] as! String
-                let author = response!["author"] as! String
+                let quote = response!["quote"] as String
+                let author = response!["author"] as String
+                //let quote = response!["quote"] as! String
+                //let author = response!["author"] as! String
                 self.updateQuoteLabel(quote, author: author)
                 self.activityIndicatorView.stopAnimating()
             }else{
@@ -63,7 +65,8 @@ class QuoteViewController: UIViewController, ADBannerViewDelegate{
             }
         }
     }
-    
+    */
+
     func updateQuoteLabel(quote: String, author: String){
         self.quoteLabel.text = quote
         self.authorLabel.text = author
